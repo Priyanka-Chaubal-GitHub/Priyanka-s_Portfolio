@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/newlogo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Priyanka</span><br>Chaubal From India</h1>
+            </div>
+        </div>
+    </div>
+<!-- ---------------------about------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p class="aboutme">Frontend developer with hands on experience working with HTML,CSS and JavaScript to deliver exceptional customer service. Contributed by working in a highly collaborative work environment, finding solutions and providing best results.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul> 
+                            <li><span><b>• HTML</b></span></li>
+                            <li><span><b>• CSS</b></span></li>
+                            <li><span><b>• Bootstrap</b></span></li>
+                            <li><span><b>• Javascript</b></span></li>
+                            <li><span><b>• JQuery</b></span></li>
+                            <li><span><b>• React</b></span></li>
+                            <li><span><b>• Web development</b></span></li>
+                            <li><span><b>• Front-end development</b></span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span><b>• Nov 2022 - Current<br>• Web developer Analyst at Accenture</b></span><br>Currently, I am responsible for creating visually appealing and engaging email templates and CLM presentations. Additionally, I am proficient in WordPress development, leveraging its features to build user-friendly and dynamic webpages.</li>
+                            <li><span><b>• Feb 2021 - Nov 2022<br>• Graduate engineer at Jacobs Engineering India</b></span><br>Throughout my tenure at Jacobs, I have developed strong technical skills and a deep understanding of engineering principles. I am proficient in using industry-standard software and tools to analyze, design, and optimize engineering systems. I am good at problem-solving and enjoy tackling complex challenges to ensure the success of each project.</li>
+                            <li><span><b>• Jan 2020 - Feb 2021<br>• Web developer at 4Phase media pvt ltd.</b></span><br>In my role at 4Phase Media, I collaborate closely with designers to bring their visions to life. 
+                                Using my expertise in HTML, CSS, JavaScript, and various frontend frameworks, I am able to build responsive and interactive websites that exceed client expectations.
+                                I am well-versed in implementing best practices for frontend development, including clean code structure, efficient asset management, and cross-browser compatibility</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><b>• 2020</b></span><br>Bachelor of Engineering in Computer Engineering from Rajiv Gandhi institue of technology, Mumbai.<br>
+                            <span><b>Passed with first class.</b></span></li>
+                            <li><span><b>• 2016</b></span><br>Diploma in Computer Technology from Sardar vallabhai patel polytechnic, Mumbai.<br>
+                            <span><b>Passed with 64.65%</b></span></li>
+                            <li><span><b>• 2011</b></span><br>Secondary School Certificate from Bombay Cambridge School,Mumbai.<br>
+                            <span><b>Passed with 79.81%</b></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ----------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web development</h2>
+                <p>I am able to deliver high-quality and responsive web solutions. I have a keen eye for design and a deep understanding of user experience principles.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Front-end development</h2>
+                <p>I am well-versed in implementing best practices for frontend development, including clean code structure, efficient asset management,cross-browser compatibility.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>UI development</h2>
+                <p>Specialized in developing the visual and interactive components of websites and web applications. Fluency in HTML/CSS, Frontend JavaScript and libraries such as React. js.</p>
+                <a href="#">Learn more</a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ----------------portfolio-------------------- -->
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+        <div class="work">
+            <img src="Images/work-1.png">
+            <div class="layer">
+                <h3>Social media app</h3>
+                <p>The app is created by me, available on
+                    play store.
+                </p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="Images/work-2.png">
+            <div class="layer">
+                <h3>Social media app</h3>
+                <p>The app is created by me, available on
+                    play store.
+                </p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="Images/work-3.png">
+            <div class="layer">
+                <h3>Social media app</h3>
+                <p>The app is created by me, available on
+                    play store.
+                </p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ---------------contact---------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> priyankachaubal800@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 9619318718</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/priyanka-chaubal-082820204/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Images/PriyankaCV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="10" placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Priyanka. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemenu = document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+</script>
+</body>
+</html>
